@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar | SONORA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page login-page">
+  <div class="auth-glow glow-one"></div><div class="auth-glow glow-two"></div>
+  <header class="topbar auth-topbar">
+    <a class="brand" href="index.html">SONORA</a>
+    <span class="topnav">SUA MÚSICA. SEU MOMENTO.</span>
+  </header>
+  <main class="auth-layout">
+    <section class="auth-intro">
+      <div class="eyebrow">UM UNIVERSO DE SONS</div>
+      <h1>O som que<br>combina com <span>você.</span></h1>
+      <p>Descubra novos artistas, encontre suas próximas músicas favoritas e crie trilhas sonoras para cada momento.</p>
+      <div class="intro-foot">Feito para ouvir sem pressa.</div>
+    </section>
+
+    <section class="auth-card login-card">
+      <h2 id="tituloLogin">Entre na sua conta</h2>
+      <div id="mensagem" class="notice"></div>
+
+      <form id="formLogin">
+        <div class="field"><label for="email">E-mail</label><div class="input-wrap"><input id="email" type="email" required></div></div>
+        <div class="field"><label for="senha">Senha</label><div class="input-wrap"><input id="senha" type="password" required></div></div>
+        <button class="btn block login-submit" type="submit">Entrar</button>
+      </form>
+
+      <form id="formLoginAdmin" class="hidden">
+        <div class="field"><label for="adminEmail">E-mail do Administrador</label><div class="input-wrap"><input id="adminEmail" type="text" required></div></div>
+        <div class="field"><label for="adminSenha">Senha do Administrador</label><div class="input-wrap"><input id="adminSenha" type="password" required></div></div>
+        <button class="btn block login-submit" type="submit">Acessar como Admin</button>
+        <button type="button" class="btn secondary block" id="btnVoltarLogin" style="margin-top: 10px;">Voltar para login comum</button>
+      </form>
+
+      <div id="areaRodapeComum">
+        <div class="form-footer">Ainda não tem uma conta? <a href="cadastro.html">Criar conta grátis</a></div>
+        <div class="auth-divider"><span>ACESSO RESTRITO</span></div>
+        <button type="button" class="btn secondary block" id="btnAbrirAdmin">Entrar como Administrador</button>
+      </div>
+    </section>
+  </main>
+  <script src="usuarios.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>

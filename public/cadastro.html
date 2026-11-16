@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar conta | SONORA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page signup-page">
+  <div class="auth-glow glow-one"></div><div class="auth-glow glow-two"></div>
+  <header class="topbar auth-topbar">
+    <a class="brand" href="index.html">SONORA</a>
+    <nav class="topnav"><a href="index.html">Já tenho uma conta</a></nav>
+  </header>
+  <main class="signup-layout">
+    <section class="signup-aside">
+      <div class="eyebrow">SUA JORNADA COMEÇA AQUI</div>
+      <h1>Descubra um<br>novo jeito de<br><span>sentir a música.</span></h1>
+      <p>Um espaço para seus artistas favoritos, novas descobertas e playlists que têm tudo a ver com você.</p>
+      <div class="signup-art">
+        <div class="vinyl"><div class="vinyl-center">S</div></div>
+        <div class="art-caption">APERTE O PLAY NA SUA HISTÓRIA.</div>
+      </div>
+    </section>
+    <section class="auth-card signup-card">
+      <div class="card-kicker">FAÇA PARTE DA SONORA</div>
+      <h2>Crie sua conta</h2>
+      <p class="subtitle">Preencha os 10 campos obrigatórios para se cadastrar.</p>
+      <div id="mensagem" class="notice"></div>
+      <form id="formCadastro">
+        <div class="form-grid">
+          <div class="field"><label for="nome">Nome</label><div class="input-wrap"><input id="nome" required></div></div>
+          <div class="field"><label for="sobrenome">Sobrenome</label><div class="input-wrap"><input id="sobrenome" required></div></div>
+          <div class="field"><label for="cpf">CPF</label><div class="input-wrap"><input id="cpf" required></div></div>
+          <div class="field"><label for="telefone">Telefone</label><div class="input-wrap"><input id="telefone" type="tel" required></div></div>
+          <div class="field"><label for="email">E-mail</label><div class="input-wrap"><input id="email" type="email" required></div></div>
+          <div class="field"><label for="senha">Senha</label><div class="input-wrap"><input id="senha" type="password" required></div></div>
+          <div class="field"><label for="cep">CEP</label><div class="input-wrap"><input id="cep" required></div></div>
+          <div class="field"><label for="rua">Rua</label><div class="input-wrap"><input id="rua" required></div></div>
+          <div class="field"><label for="cidade">Cidade</label><div class="input-wrap"><input id="cidade" required></div></div>
+          <div class="field"><label for="estado">Estado</label><div class="input-wrap"><input id="estado" required></div></div>
+        </div>
+        <button class="btn block login-submit" type="submit">Criar minha conta</button>
+        <a href="index.html" class="btn secondary block" style="margin-top: 12px; text-align: center; display: block;">Ir para o login</a>
+      </form>
+    </section>
+  </main>
+  <script src="usuarios.js"></script>
+  <script src="cadastro.js"></script>
+</body>
+</html>

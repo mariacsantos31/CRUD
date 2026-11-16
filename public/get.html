@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultar Usuários | SONORA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-page">
+  <header class="topbar admin-topbar">
+    <a class="brand" href="boas-vindas.html">SONORA</a>
+    <nav class="topnav">
+      <a class="btn secondary small" href="boas-vindas.html">Início</a>
+      <a class="btn secondary small" href="put.html">Editar (PUT)</a>
+      <a class="btn secondary small" href="delete.html">Apagar (DELETE)</a>
+      <button class="btn secondary small" id="btnSair">Sair</button>
+    </nav>
+  </header>
+  <main class="container admin-container">
+    <div class="section-title">
+      <div class="eyebrow">CONSULTA DE CADASTROS</div>
+      <h1>Usuários cadastrados</h1>
+      <p class="subtitle">Visualize todas as contas ou filtre pelo CPF.</p>
+    </div>
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Lista completa</h2>
+          <p class="muted" id="contador">Carregando...</p>
+        </div>
+        <div class="searchbar">
+          <input id="buscaCpf" aria-label="Buscar por CPF">
+          <button class="btn" id="btnBuscar">Buscar</button>
+          <button class="btn secondary" id="btnLimpar">Limpar</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>CPF</th>
+              <th>E-mail</th>
+              <th>Telefone</th>
+              <th>Endereço</th>
+              <th>Tipo</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="listaUsuarios"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="get.js"></script>
+</body>
+</html>

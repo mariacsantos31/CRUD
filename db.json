@@ -1,0 +1,18 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Administrador",
+      "sobrenome": "SONORA",
+      "cpf": "000.000.000-00",
+      "email": "admin@admin",
+      "senha": "admin",
+      "rua": "Av. Paulista, 1000",
+      "cep": "01310-100",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "telefone": "(11) 99999-9999",
+      "admin": true
+    }
+  ]
+}

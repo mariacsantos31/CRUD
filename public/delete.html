@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apagar Usuário  | SONORA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-page">
+  <header class="topbar admin-topbar">
+    <a class="brand" href="boas-vindas.html">SONORA</a>
+    <nav class="topnav">
+      <a class="btn secondary small" href="boas-vindas.html">Início</a>
+      <a class="btn secondary small" href="get.html">Listar (GET)</a>
+      <a class="btn secondary small" href="put.html">Editar (PUT)</a>
+      <button class="btn secondary small" id="btnSair">Sair</button>
+    </nav>
+  </header>
+  <main class="container admin-container">
+    <div class="section-title">
+      <div class="eyebrow">REMOVER CADASTRO</div>
+      <h1>Apagar usuário por CPF</h1>
+      <p class="subtitle">Consulte pelo CPF para confirmar a exclusão da conta.</p>
+    </div>
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Buscar cadastro para exclusão</h2>
+        <div class="searchbar">
+          <input id="buscaCpf" aria-label="Buscar por CPF">
+          <button class="btn" id="btnBuscar">Buscar</button>
+        </div>
+      </div>
+      <div id="mensagem" class="notice"></div>
+      <div id="cardConfirmacao" class="hidden">
+        <p id="dadosUsuario" style="margin-bottom: 14px;"></p>
+        <button class="btn danger" id="btnConfirmarExclusao">Confirmar exclusão definitiva</button>
+      </div>
+    </section>
+  </main>
+  <script src="delete.js"></script>
+</body>
+</html>

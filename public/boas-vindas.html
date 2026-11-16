@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SONORA | Início</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="music-page">
+  <aside class="sidebar">
+    <a class="brand sidebar-brand" href="boas-vindas.html">SONORA</a>
+    <div class="side-label">MENU</div>
+    <nav class="side-nav">
+      <a class="side-link active" href="boas-vindas.html">Início</a>
+      <a class="side-link" href="#albuns">Álbuns</a>
+      <a class="side-link" href="admin.html">Cadastrados</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="mini-profile">
+        <div class="avatar" id="avatarUsuario">S</div>
+        <div>
+          <strong id="nomeNav">Ouvinte</strong>
+          <small>Conta SONORA</small>
+        </div>
+      </div>
+      <button class="logout-link" onclick="sair()">Sair da conta</button>
+    </div>
+  </aside>
+
+  <main class="music-main">
+    <header class="music-header">
+      <div class="breadcrumb">SONORA / INÍCIO</div>
+      <div class="header-actions">
+        <a class="btn secondary small" href="admin.html">Ver cadastrados</a>
+      </div>
+    </header>
+
+    <section class="welcome-center">
+      <div class="welcome-content">
+        <h1 id="tituloBoasVindas">Olá, ouvinte.</h1>
+        <p>Confira os álbuns em destaque na plataforma.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="albuns">
+      <div class="section-heading">
+        <div><h2>Álbuns em destaque</h2></div>
+        <span class="section-meta">CATÁLOGO SONORA</span>
+      </div>
+      <div class="featured-grid">
+        <article class="feature-card feature-main">
+          <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=1000&auto=format&fit=crop&q=85" alt="Depois do anoitecer">
+          <div class="feature-overlay"></div>
+          <div class="feature-copy">
+            <span class="feature-tag">ÁLBUM</span>
+            <h3>Depois do<br>anoitecer</h3>
+            <p>SONORA Sessions · 2026</p>
+          </div>
+        </article>
+        <article class="feature-card feature-purple">
+          <div class="abstract-art art-purple"><span>WAVES</span></div>
+          <div class="feature-copy">
+            <span class="feature-tag">ÁLBUM</span>
+            <h3>Vibe<br>alternativa</h3>
+            <p>Coletânea Indie · 2026</p>
+          </div>
+        </article>
+        <article class="feature-card feature-orange">
+          <div class="abstract-art art-orange"><span>FEEL<br>GOOD</span></div>
+          <div class="feature-copy">
+            <span class="feature-tag">ÁLBUM</span>
+            <h3>Dia leve</h3>
+            <p>Seleção Pop · 2026</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="boas-vindas.js"></script>
+</body>
+</html>
